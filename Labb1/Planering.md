@@ -32,9 +32,23 @@ Labb1 - Planering
                 ##      skriv felmeddelande "värdet för högt"
             ##      om numret+1 är under 10
                 ##      lägg till en nolla innan siffran i hostnamn utan mellanrum till siffran
-            ##      annars inget
-        ##      lägg till siffran till hostnamn som textsträng
-        ##      skriv ut nästa hostnamn
+                ##      skriv ut nästa hostnamn+1
+                
+            ##      annars 
+                        ##      skriv ut nästa hostnamn+1
+        ##säj adjö
+
+
+    ##felmeddelandet:
+    ## här vill jag ha max 2 st siffror och om värdet är under 10 vill jag endast ha en siffra:3
+    ##Traceback (most recent call last):
+    ##  File "/home/delta/Pictures/LabbProgtrammeringskursen/Programmering/Labb1/Problem1.py", line 18, in <module>
+    ##    if(lastnumber+1 > 99):
+    ##       ~~~~~~~~~~^~
+    ##TypeError: can only concatenate str (not "int") to str
+
+    ##eftersom lastnumberfortfarande är en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
+    
 ##Problem 2
 ##Problem 3
 ##Del 4: Från källkod till körning
