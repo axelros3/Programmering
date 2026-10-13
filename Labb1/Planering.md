@@ -26,14 +26,14 @@ Labb1 - Planering
             ##      gör texten till gemener 
         ##      kontrollera att enhetstyp är korrekt angiven
             ##      gör texten till gemener
-        ##börja sätt ihop hostnamn som en textsträng innehållande platskod-enhetstyp-
+        ##      börja sätt ihop hostnamn som en textsträng innehållande platskod-enhetstyp-
         ##      kontrollera att nummret är korrekt angivet 
-            ##      om numret högre än 99
+            ##      om numret är högre än 99
                 ##      skriv felmeddelande "värdet för högt"
             ##      om numret är under 10
                 ##      lägg till en nolla innan siffran i hostnamn utan mellanrum till siffran
             ##      annars inget
-        ##      lägg till sifran till hostnamn som textsträng
+        ##      lägg till siffran till hostnamn som textsträng
         ##      skriv ut nästa hostnamn
 ##Problem 2
 ##Problem 3
