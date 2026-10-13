@@ -47,8 +47,8 @@ Labb1 - Planering
     ##       ~~~~~~~~~~^~
     ##TypeError: can only concatenate str (not "int") to str
 
-    ##eftersom lastnumberfortfarande är en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
-    
+    ##eftersom lastnumber fortfarande är/var en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
+
 ##Problem 2
 ##Problem 3
 ##Del 4: Från källkod till körning
