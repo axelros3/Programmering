@@ -5,6 +5,7 @@ Labb1 - Planering
     ##i detta fall platskod, enhetstyp och senast använt nummer.
     ##utdata: data/information som programmet genererar och på något vis lämnar ut till användaren,
     ##i detta fall utskrift på skärmen av kombinationen platskod-enhetstyp-"senaste nummer".
+    ##variabel som används för att hålla/generera utdata: hostnamn
     ##regler:   platskod är text.
         ##      enhetstyp är text.
         ##      senaste nummer är ett heltal.
@@ -13,12 +14,27 @@ Labb1 - Planering
 
     ##risker:   användaren blandar stora och små bokstäver vid inmatning.
         ##      användaren skriver siffran med bokstäver.
-        ##      användaren skriver med nollan om sifran är under 10 tex 05 vilket inte är ett korrekt angivet heltal.
+        ##      användaren skriver med nollan om siffran är under 10 tex 05 vilket inte är ett korrekt angivet heltal.
     ##Planera:
-        ##fråga användaren om platskod
-        ##fråga användaren om enhetstyp
-        ##fråga användaren om senast använda nummer
-    skriv ut nästa hostnamn
+        ##      fråga användaren om platskod
+        ##      läs in data från användaren
+        ##      fråga användaren om enhetstyp
+        ##      läs in data från användaren
+        ##      fråga användaren om senast använda nummer
+        ##      läs in data från användaren
+        ##      kontrollera att platskod är korrekt angiven
+            ##      gör texten till gemener 
+        ##      kontrollera att enhetstyp är korrekt angiven
+            ##      gör texten till gemener
+        ##börja sätt ihop hostnamn som en textsträng innehållande platskod-enhetstyp-
+        ##      kontrollera att nummret är korrekt angivet 
+            ##      om numret högre än 99
+                ##      skriv felmeddelande "värdet för högt"
+            ##      om numret är under 10
+                ##      lägg till en nolla innan siffran i hostnamn utan mellanrum till siffran
+            ##      annars inget
+        ##      lägg till sifran till hostnamn som textsträng
+        ##      skriv ut nästa hostnamn
 ##Problem 2
 ##Problem 3
 ##Del 4: Från källkod till körning
