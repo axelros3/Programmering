@@ -17,11 +17,11 @@ hostnamn = platskod + "-" + enhetstyp + "-"
 ##kontrollera att siffran är korrekt angiven
 if(lastnumber+1 > 99):
     print("numret är för högt")
-if(lastnumber+1 <10):
-    hostnamn =+ "0" + str(lastnumber+1)
+elif(lastnumber+1 <10):
+    hostnamn = hostnamn + "0" + str(lastnumber+1)
     print("det nya värdnamnet är: " + hostnamn)
 else:
-    hostnamn =+ str(lastnumber+1)
+    hostnamn = hostnamn + str(lastnumber+1)
     print("det nya värdnamnet är: " + hostnamn)
 
 print("hejdå")
