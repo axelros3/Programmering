@@ -28,9 +28,9 @@ Labb1 - Planering
             ##      gör texten till gemener
         ##      börja sätt ihop hostnamn som en textsträng innehållande platskod-enhetstyp-
         ##      kontrollera att nummret är korrekt angivet 
-            ##      om numret är högre än 99
+            ##      om numret+1 är högre än 99
                 ##      skriv felmeddelande "värdet för högt"
-            ##      om numret är under 10
+            ##      om numret+1 är under 10
                 ##      lägg till en nolla innan siffran i hostnamn utan mellanrum till siffran
             ##      annars inget
         ##      lägg till siffran till hostnamn som textsträng
