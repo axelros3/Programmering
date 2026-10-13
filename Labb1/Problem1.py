@@ -21,7 +21,8 @@ if(lastnumber+1 <10):
     hostnamn =+ "0" + str(lastnumber+1)
     print("det nya värdnamnet är: " + hostnamn)
 else:
-    print("det nya värdnamnet är: " + hostnamn+1)
+    hostnamn =+ str(lastnumber+1)
+    print("det nya värdnamnet är: " + hostnamn)
 
 print("hejdå")
 
