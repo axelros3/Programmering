@@ -83,7 +83,9 @@ Labb1 - Planering
         ##  att myFileSize multpliceras med 8 beror på att storleken är i bytes, och varje byte är 8 bitar,
         ##  och multiplicationen med 1000 är för att vi kommer mata in storleken som GB men i beräkningen vill vi ha Bytes
         ##  som i sin tur blir multiplicerat med 8 för att få bitar så att filstorleken och bandbredden är på samma enhet.
-        ## 
+        ##  1 GB -> 1 * 1000 * 8 = 8 000 Mbit
+        ##  100 MBit/s
+        ##  8000 / 100 = 80 sekunder
     ##Planera:
 ##Problem 3
 ##Del 4: Från källkod till körning
