@@ -153,7 +153,10 @@ Labb1 - Planering
             ##  sedan körs maskinkoden i en virtuel maskin eller container (venv i sökvägen ovan står för virtual environment).
     ##  uppgift C:
         ##  minne
-            ##  den börjar lägre men efter ca 30 sekunder så stannar minnesanvändningen på 5 mb (har dessutom en python process till som ligger på 5.0 mb, frågan är om det är en process som "tappats bort" och därför inte kommer avslutas eller om det är pythontolken som hålls igång via Code...)
+            ##  den börjar lägre men efter ca 30 sekunder så stannar minnesanvändningen på 5 mb
+            ##  (har dessutom en python process till som ligger på 5.0 mb, frågan är om det är en
+            ##  process som "tappats bort" och därför inte kommer avslutas eller om det är pythontolken
+            ##  som hålls igång via Code...)
         ##  info
             ##  hittar inte enkelt den informationen via övervakaren
             ##  (motsvarigheten i linux för aktivitetshanteraren)
@@ -164,4 +167,7 @@ Labb1 - Planering
             ##  med linuxkommandot ps -elf | grep python får vi fram att processen har fått
             ##  PID 500351  (den tidigare nämnda borttappade python processen har pid: 493307
             ##  och eftersom jag kör linux kan jag enkelt döda den processen)
-        
+    ##  uppgift D:
+        ##  operativsystemet säger åt processorn att skapa en ny process och att allokera minne till processen.
+        ##  tolken börjar sedan kontrollera syntaxen på källkoden och översätter sedan tillbytekod som sedan körs
+        ##  via pythons virtuella miljö
