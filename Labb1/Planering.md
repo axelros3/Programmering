@@ -52,7 +52,7 @@ Labb1 - Planering
     ##Platskod  Typ Senaste nr  Förväntat           Faktiskt    OK?
     ##STO       srv     7       sto-srv-08          sto-srv-08  ja
     ##gbg       SW      11      gbg-sw-12           gbg-sw-12   ja
-    ##sto       srv     0       sto-srv-01
+    ##sto       srv     0       sto-srv-01          sto-srv-01  ja
     ##mal       pc      99      "numret är för högt"
     ##sto       srv     sju     crash typfel
 
