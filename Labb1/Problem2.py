@@ -20,9 +20,9 @@ mySeconds = 0
 
 ##beräkna antalet timmar
 ##while (mytimeHMS  >= 3600):
-myHours = mytimeHMS/3600
+myHours = int(mytimeHMS/3600)
 mytimeHMS = mytimeHMS % 3600
-myMinutes = mytimeHMS / 60
+myMinutes = int(mytimeHMS / 60)
 mySeconds = mytimeHMS %60
 
 if(myHours > 0):
