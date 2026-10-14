@@ -56,6 +56,11 @@ Labb1 - Planering
     ##mal       pc      99      "numret är för högt"    "numret är för högt"                                        ja
     ##sto       srv     sju     crash typfel            ValueError: invalid literal for int() with base 10: 'sju'   nej
 
+    ## I 4:e testfallet överstiger "lastnumber+1" max antal enheter som kan hanteras med 2 siffror. för att kunna använda fler
+    ## enheter med samma namnstruktur så behöver man utöka antalet siffror som tillåts till 3 vilket skulle ge oss 999 st 
+    ## vi skulle då kunna få sto-pc-999
+    ## testfall 5 går fel redan vid inmatningen då programmet förväntar sig en text som går att göra om till en siffra men
+    ## får en text som inte går att konvertera till ett heltal.
 ##Problem 2
 ##Problem 3
 ##Del 4: Från källkod till körning
