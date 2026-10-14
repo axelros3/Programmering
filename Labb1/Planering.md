@@ -70,7 +70,7 @@ Labb1 - Planering
     ##variabel som används för att hålla/generera utdata: myTime
     ##regler:   myFileSize är ett flyttal.
         ##      myBandWidth är et heltal.
-        ##      myTime är ett heltal (som håller redan på antalet sekunder).
+        ##      myTime är ett heltal (som håller reda på antalet sekunder).
         
 
     ##risker:   användaren skriver negativa siffror
