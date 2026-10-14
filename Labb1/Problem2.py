@@ -22,25 +22,14 @@ mySeconds = 0
 ##while (mytimeHMS  >= 3600):
 myHours = mytimeHMS/3600
 mytimeHMS = mytimeHMS % 3600
-        
+myMinutes = mytimeHMS / 60
+mySeconds = mytimeHMS %60
 
 if(myHours > 0):
     mytimformat = mytimformat + f"{myHours} timmar "
 
-##beräkna antalet minuter
-##while (mytimeHMS  >= 60):
-myMinutes = mytimeHMS / 60
-    
-        
-
 if(myMinutes > 0):
     mytimformat = mytimformat + f"{myMinutes} minuter "
-
-##beräkna antalet sekunder
-##while (mytimeHMS  >= 1):
-mySeconds = mytimeHMS %60
-    
-        
 
 if(mySeconds > 0):
     mytimformat = mytimformat + f"{mySeconds} sekunder."
