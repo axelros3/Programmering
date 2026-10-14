@@ -117,8 +117,8 @@ Labb1 - Planering
 
     ##tesfall
     ##  Test    Prefix  Enheter Förväntat totalt    Förväntat användbara    Förväntat lediga    Faktiskt OK?
-    ##  1       24      180     256                 254                     74
-    ##  2       26      50      64                  62                      12
+    ##  1       24      180     256                 254                     74                  74
+    ##  2       26      50      64                  62                      12                  
     ##  3       30      2       4                   2                       0
     ##  4       16      1000    65536               65534                   64534
     ##  5       27      40      32                  30                      ?
