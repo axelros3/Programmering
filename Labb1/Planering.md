@@ -101,5 +101,7 @@ Labb1 - Planering
     ##  orsak till att det tar längr tid än beräknat, dels att värdena inte är exakt då vi här beräknar en kbyte som 1000 istället för 1024 som
     ##  det egentligen är. men också för att annan trafik och störningar på nätverket, för att inte tala om overhead hanteringen, gör att det
     ##  tar längre tid än vad en sån här beräkning kan ge (därav att jag skriver ut "ca"). 
+
 ##Problem 3
+    
 ##Del 4: Från källkod till körning
