@@ -132,3 +132,10 @@ Labb1 - Planering
     ##  faktiskt ingen roll eftersom indata är utanför relevant intervall.
 
 ##Del 4: Från källkod till körning
+
+    ##  uppgift A:
+        ##  var på datorn ligger filen?
+            ##  /home/delta/Pictures/LabbProgtrammeringskursen/Programmering/Labb1/Problem3.py (kör ju Linux)
+        ##  vad händer med filen när datorn stängs av
+            ##  inget.... filen ligger sparad på långtidslagring (hårddisk, SSD...)
+        
