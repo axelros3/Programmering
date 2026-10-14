@@ -1,6 +1,6 @@
 Labb1 - Planering
 
-##Problem 1
+##Problem 1     ############################################################################################33
     ##indata: data/information som fås ifrån "användaren",
     ##i detta fall platskod, enhetstyp och senast använt nummer.
     ##utdata: data/information som programmet genererar och på något vis lämnar ut till användaren,
@@ -63,7 +63,7 @@ Labb1 - Planering
     ## får en text som inte går att konvertera till ett heltal.
 
 
-##Problem 2
+##Problem 2     ##############################################################################################################
     ## börjar med länk till draw.io: https://drive.google.com/file/d/1JFZeRwgHmbvdcMg6pSXdvhfwDE_XsQB9/view?usp=sharing
     ##indata: myFileSize och myBandWidth.
     ##utdata: utskrift på skärmen av beräkningen mtTime = (myFileSize * 1000 *8 ) / (myBandWidth)
@@ -102,7 +102,7 @@ Labb1 - Planering
     ##  det egentligen är. men också för att annan trafik och störningar på nätverket, för att inte tala om overhead hanteringen, gör att det
     ##  tar längre tid än vad en sån här beräkning kan ge (därav att jag skriver ut "ca"). 
 
-##Problem 3
+##Problem 3     ######################################################################################################333
     ##  indata:     prefix, antal använda
     ##  utdata:     antal-totalt/användbara/lediga 
     ##  variabler:  myPrefix,incomingUsedNr, myBits, myTotalNr, myUsableNr, myAvailableNr
@@ -115,5 +115,7 @@ Labb1 - Planering
     ##  beräkna hur många som är lediga, myUsableNr-incomingUsedNr.
     ##  beräkna om det får plats en enhet till.
 
+    ##tesfall
+    
 
 ##Del 4: Från källkod till körning
