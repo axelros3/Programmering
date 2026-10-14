@@ -136,6 +136,20 @@ Labb1 - Planering
     ##  uppgift A:
         ##  var på datorn ligger filen?
             ##  /home/delta/Pictures/LabbProgtrammeringskursen/Programmering/Labb1/Problem3.py (kör ju Linux)
-        ##  vad händer med filen när datorn stängs av
+        ##  vad händer med filen när datorn stängs av?
             ##  inget.... filen ligger sparad på långtidslagring (hårddisk, SSD...)
+    ##  uppgift B:
+        ##  sökvägen: börjar med att "stycka upp" sökvägen så den inte blir olidligt lång)
+            ##  (.venv) delta@deltaframe:~/Pictures/LabbProgtrammeringskursen/Programmering$
+            ##  /home/delta/Pictures/LabbProgtrammeringskursen/Programmering/.venv/bin/python
+            ##  /home/delta/Pictures/LabbProgtrammeringskursen/Programmering/Labb1/Problem3.py
+
+            ##(.venv) delta@deltaframe:~/Pictures/LabbProgtrammeringskursen/Programmering$ /home/delta/Pictures/LabbProgtrammeringskursen/Programmering/.venv/bin/python /home/delta/Pictures/LabbProgtrammeringskursen/Programmering/Labb1/Problem3.py
+        ##  python version:
+            ##  Python 3.14.4
+        ##  vad gör python-"tolken"
+            ##  den korta versionen är att den översätter pythonkoden till maskinkod.
+            ##  den lite längre är att kontrollerar syntax innan den börjar översätta till maskinkod,
+            ##  sedan körs maskinkoden i en virtuel maskin eller container (venv i sökvägen ovan står för virtual environment).
+    ##
         
