@@ -76,6 +76,7 @@ Labb1 - Planering
     ##risker:   användaren skriver negativa siffror
         ##      användaren skriver siffror med bokstäver.
         ##      användaren skriver med flyttal där det skall vara heltal, och tvärtom.
+        ##      användaren skriver fel så att division försöker utföras med noll
 
     ##förstå-frågor:
         ##  filstorlek kan, rent av skall, vara ett flyttal, då storleken anges i GB så en fil på en halv GB skrivs då som 0.5 GB
@@ -95,5 +96,10 @@ Labb1 - Planering
     ##  50              1000                400.0               6.67            6min 40sek
     ##  0.5             1000                4.0                 0.07            4sek
     ##  1               0                   division med noll   ininity         ZeroDivisionError: division by zero
+
+    ##  det sista testet ger ett zeroDivisionError pga att vi i detta fallet försöker dela med noll.
+    ##  orsak till att det tar längr tid än beräknat, dels att värdena inte är exakt då vi här beräknar en kbyte som 1000 istället för 1024 som
+    ##  det egentligen är. men också för att annan trafik och störningar på nätverket, för att inte tala om overhead hanteringen, gör att det
+    ##  tar längre tid än vad en sån här beräkning kan ge (därav att jag skriver ut "ca"). 
 ##Problem 3
 ##Del 4: Från källkod till körning
