@@ -49,12 +49,12 @@ Labb1 - Planering
 
     ##eftersom lastnumber fortfarande är/var en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
 
-    ##Platskod  Typ Senaste nr  Förväntat               Faktiskt                OK?
-    ##STO       srv     7       sto-srv-08              sto-srv-08              ja
-    ##gbg       SW      11      gbg-sw-12               gbg-sw-12               ja
-    ##sto       srv     0       sto-srv-01              sto-srv-01              ja
-    ##mal       pc      99      "numret är för högt"    "numret är för högt"    ja
-    ##sto       srv     sju     crash typfel
+    ##Platskod  Typ Senaste nr  Förväntat               Faktiskt                                                    OK?
+    ##STO       srv     7       sto-srv-08              sto-srv-08                                                  ja
+    ##gbg       SW      11      gbg-sw-12               gbg-sw-12                                                   ja
+    ##sto       srv     0       sto-srv-01              sto-srv-01                                                  ja
+    ##mal       pc      99      "numret är för högt"    "numret är för högt"                                        ja
+    ##sto       srv     sju     crash typfel            ValueError: invalid literal for int() with base 10: 'sju'   nej
 
 ##Problem 2
 ##Problem 3
