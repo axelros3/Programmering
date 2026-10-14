@@ -21,7 +21,7 @@ if(myAvailableNr > 0):
 else:
     print("Det finns tyvär inte plats i subnätet.")    
 
-print(f"""totalt finns det {myTotalNr} IP-adresser i subnätet
+print(f"""\ntotalt finns det {myTotalNr} IP-adresser i subnätet
 varav {myUsableNr} är användbara för enheter.
 av dessa finns det {myAvailableNr } kvar att använda""")
 

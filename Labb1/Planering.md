@@ -116,6 +116,12 @@ Labb1 - Planering
     ##  beräkna om det får plats en enhet till.
 
     ##tesfall
-    
+    ##  Test    Prefix  Enheter Förväntat totalt    Förväntat användbara    Förväntat lediga    Faktiskt OK?
+    ##  1       24      180     256                 254                     74
+    ##  2       26      50      64                  62                      12
+    ##  3       30      2       4                   2                       0
+    ##  4       16      1000    65536               65534                   64534
+    ##  5       27      40      32                  30                      ?
+    ##  6       33      0       ?                   ?                       ?
 
 ##Del 4: Från källkod till körning
