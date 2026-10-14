@@ -61,6 +61,21 @@ Labb1 - Planering
     ## vi skulle då kunna få sto-pc-999
     ## testfall 5 går fel redan vid inmatningen då programmet förväntar sig en text som går att göra om till en siffra men
     ## får en text som inte går att konvertera till ett heltal.
+
+
 ##Problem 2
+    ## börjar med länk till draw.io: https://drive.google.com/file/d/1JFZeRwgHmbvdcMg6pSXdvhfwDE_XsQB9/view?usp=sharing
+    ##indata: myFileSize och myBandWidth.
+    ##utdata: utskrift på skärmen av beräkningen mtTime = (myFileSize * 1000 *8 ) / (myBandWidth)
+    ##variabel som används för att hålla/generera utdata: myTime
+    ##regler:   myFileSize är ett flyttal.
+        ##      myBandWidth är et heltal.
+        ##      myTime är ett heltal (som håller redan på antalet sekunder).
+        
+
+    ##risker:   användaren skriver negativa siffror
+        ##      användaren skriver siffror med bokstäver.
+        ##      användaren skriver med flyttal där det skall vara heltal, och tvärtom.
+    ##Planera:
 ##Problem 3
 ##Del 4: Från källkod till körning
