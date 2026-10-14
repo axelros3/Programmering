@@ -49,6 +49,13 @@ Labb1 - Planering
 
     ##eftersom lastnumber fortfarande är/var en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
 
+    ##Platskod  Typ Senaste nr  Förväntat           Faktiskt    OK?
+    ##STO       srv     7       sto-srv-08
+    ##gbg       SW      11      gbg-sw-12
+    ##sto       srv     0       sto-srv-01
+    ##mal       pc      99      "numret är för högt"
+    ##sto       srv     sju     crash typfel
+
 ##Problem 2
 ##Problem 3
 ##Del 4: Från källkod till körning
