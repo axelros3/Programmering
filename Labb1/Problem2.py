@@ -21,7 +21,7 @@ mySeconds = 0
 ##beräkna antalet timmar
 while (mytimeHMS  >= 3600):
     mytimeHMS = mytimeHMS - 3600
-    myHours =+ 1
+    myHours += 1
 
 if(myHours > 0):
     mytimformat = mytimformat + f"{myHours} timmar "
@@ -29,7 +29,7 @@ if(myHours > 0):
 ##beräkna antalet minuter
 while (mytimeHMS  >= 60):
     mytimeHMS = mytimeHMS - 60
-    myMinutes =+ 1
+    myMinutes += 1
 
 if(myMinutes > 0):
     mytimformat = mytimformat + f"{myMinutes} minuter "
@@ -37,7 +37,7 @@ if(myMinutes > 0):
 ##beräkna antalet sekunder
 while (mytimeHMS  >= 1):
     mytimeHMS = mytimeHMS - 1
-    mySeconds =+ 1
+    mySeconds += 1
 
 if(mySeconds > 0):
     mytimformat = mytimformat + f"{mySeconds} sekunder."
