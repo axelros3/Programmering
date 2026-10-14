@@ -87,5 +87,13 @@ Labb1 - Planering
         ##  100 MBit/s
         ##  8000 / 100 = 80 sekunder
     ##Planera:
+
+    ##tester
+    ##  Storlek (GB)    Bandbredd(Mbit/s)   Förväntat (s)       Förväntat(min)  Faktiskt         OK?
+    ##  1               100                 80.0                1.33            1min 20sek
+    ##  4.5             250                 144.0               2.4             2min 24sek
+    ##  50              1000                400.0               6.67            6min 40sek
+    ##  0.5             1000                4.0                 0.07            4sek
+    ##  1               0                   division med noll   ininity         ZeroDivisionError: division by zero
 ##Problem 3
 ##Del 4: Från källkod till körning

@@ -10,7 +10,7 @@ myFileSize = float(input("ange i GByte: "))
 print("nu vill jag ha nedladdningshastigheten")
 myBandWidth = int(input("ange i MBit/s: "))
 myTime = (myFileSize * 1000 * 8)/(myBandWidth)
-print(f"Med bandbredden {myBandWidth} kommer din fil på {myFileSize} GB ta ca {myTime} sekunder att ladda ned")
+print(f"Med bandbredden {myBandWidth} MBit/s kommer din fil på {myFileSize} GB ta ca {myTime} sekunder att ladda ned")
 
 mytimformat = "eller "
 mytimeHMS =myTime
@@ -18,12 +18,11 @@ myHours = 0
 myMinutes = 0
 mySeconds = 0
 
-##beräkna antalet timmar
-##while (mytimeHMS  >= 3600):
-myHours = int(mytimeHMS/3600)
-mytimeHMS = mytimeHMS % 3600
-myMinutes = int(mytimeHMS / 60)
-mySeconds = mytimeHMS %60
+##beräkna tiden så vi får en variabel för timmar, en för minuter och en för sekundrar
+myHours = int(mytimeHMS/3600)   ##beräkna antalet timmar, vi vill bara ha heltal
+mytimeHMS = mytimeHMS % 3600    ##beräkna resterande tid och spara i vår variabel
+myMinutes = int(mytimeHMS / 60) ##beräkna antalet minuter, vi vill bara ha heltal
+mySeconds = mytimeHMS %60       ##beräkna antalet resterande sekunder
 
 if(myHours > 0):
     mytimformat = mytimformat + f"{myHours} timmar "
