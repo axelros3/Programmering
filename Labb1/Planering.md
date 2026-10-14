@@ -103,5 +103,17 @@ Labb1 - Planering
     ##  tar längre tid än vad en sån här beräkning kan ge (därav att jag skriver ut "ca"). 
 
 ##Problem 3
-    
+    ##  indata:     prefix, antal använda
+    ##  utdata:     antal-totalt/användbara/lediga 
+    ##  variabler:  myPrefix,incomingUsedNr, myBits, myTotalNr, myUsableNr, myAvailableNr
+
+    ##  läs in myPrefix.
+    ##  läs in incomingUsedNr.
+    ##  beräkna hur många bitar som används till host, myBits=32-myPrefix.
+    ##  beräkna hur många adresser det ger, myTotalNr = 2**myBits.
+    ##  beräkna hur många som är användbara, myUsableNr = myTotalNr - 2.
+    ##  beräkna hur många som är lediga, myUsableNr-incomingUsedNr.
+    ##  beräkna om det får plats en enhet till.
+
+
 ##Del 4: Från källkod till körning
