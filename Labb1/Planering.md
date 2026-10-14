@@ -124,6 +124,11 @@ Labb1 - Planering
     ##  5       27      40      32                  30                      0                   -10
     ##  6       33      0       0.5                 -1.5                    -1.5
 
-    ##
+    ##  test 3: för att det bara behövs 2 st användbara adresser vilket blir perfekt eftersom prefixet /30 ger
+    ##  4 IP-adresser och 2 räknas bort då de tillfaller subnätet och broadcast-adressen
+    ##  test 5: att någon har klantat sig och stoppat in 10 st enheter i fel subnät, och 2 st upptar dessutom
+    ##  broadcast adress för "korrekt" subnät och nätadress för nästa subnät... så någon borde få sparken... eller utbildning
+    ##  test 6: programmet borde bara tillåta prefixlänger mellan 0 och 32. att uträkningen annars blir bort i tok spelar
+    ##  faktiskt ingen roll eftersom indata är utanför relevant intervall.
 
 ##Del 4: Från källkod till körning
