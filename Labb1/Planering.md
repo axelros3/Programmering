@@ -76,6 +76,14 @@ Labb1 - Planering
     ##risker:   användaren skriver negativa siffror
         ##      användaren skriver siffror med bokstäver.
         ##      användaren skriver med flyttal där det skall vara heltal, och tvärtom.
+
+    ##förstå-frågor:
+        ##  filstorlek kan, rent av skall, vara ett flyttal, då storleken anges i GB så en fil på en halv GB skrivs då som 0.5 GB
+        ##  och en fil på 3/4 GB som 0.7 GB (kanske 0.75 GB beroende på hur många decimaler som används...)
+        ##  att myFileSize multpliceras med 8 beror på att storleken är i bytes, och varje byte är 8 bitar,
+        ##  och multiplicationen med 1000 är för att vi kommer mata in storleken som GB men i beräkningen vill vi ha Bytes
+        ##  som i sin tur blir multiplicerat med 8 för att få bitar så att filstorleken och bandbredden är på samma enhet.
+        ## 
     ##Planera:
 ##Problem 3
 ##Del 4: Från källkod till körning
