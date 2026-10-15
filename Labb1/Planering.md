@@ -171,3 +171,18 @@ Labb1 - Planering
         ##  operativsystemet säger åt processorn att skapa en ny process och att allokera minne till processen.
         ##  tolken börjar sedan kontrollera syntaxen på källkoden och översätter sedan tillbytekod som sedan körs
         ##  via pythons virtuella miljö
+
+    ##utmaningar:
+        ##  här kommer en liten testutskrift kring modulen dis (vanlig print i python)
+        ##  0           RESUME                   0
+        ##
+        ##  1           LOAD_SMALL_INT           2
+        ##              LOAD_NAME                0 (myBits)
+        ##              BINARY_OP                8 (**)
+        ##              RETURN_VALUE
+        ##  Hejdå (vanlif printe i python)
+        ##  förklaring    ##################################
+        ##  börjar med att läsa in heltalet 2 i en minnesplats
+        ##  ge minnesplatsen ett namn eller Label
+        ##  utför den binära operationen att flytta in ettor med början från höger och gör det 8 gånger (samma som 2 upphöjt till 8)
+

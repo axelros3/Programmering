@@ -28,7 +28,7 @@ varav {myUsableNr} är användbara för enheter.
 av dessa finns det {myAvailableNr } kvar att använda""")
 print(f"pythons egna modul säger att det finns {nat.num_addresses} IP-addresser\noch nätmasken är {nat.netmask}")
 print("här kommer en liten testutskrift kring modulen dis")
-dis.dis(2**myBits)
+dis.dis("2**myBits")
 print("Hejdå")
 
 
