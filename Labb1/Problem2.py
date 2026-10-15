@@ -1,6 +1,7 @@
 
 #//
 # Lösningsförslag till Problem 2 i programmeringskursens labb 1
+# med tillägget för användningsprcent
 # författare Axel Roselius
 # /#
 
@@ -9,9 +10,12 @@ print("välkommen till nedladdningsberäknaren\nJag vill ha filstorleken")
 myFileSize = float(input("ange i GByte: "))
 print("nu vill jag ha nedladdningshastigheten")
 myBandWidth = int(input("ange i MBit/s: "))
+print("och stor del av bandbredden används?")
+myBWPercentage = int(input("ge mig procent i heltal tex 80 tack: "))
 myTime = (myFileSize * 1000 * 8)/(myBandWidth)
 print(f"Med bandbredden {myBandWidth} MBit/s kommer din fil på {myFileSize} GB ta ca {myTime} sekunder att ladda ned")
-
+myTime = (myFileSize * 1000 * 8)/(myBandWidth*(myBWPercentage/100))
+print(f"Men med störningar och andra enheter som representeras av hur stor del av bandbredden som används får vi {myTime} sekunder")
 mytimformat = "eller "
 mytimeHMS =myTime
 myHours = 0
