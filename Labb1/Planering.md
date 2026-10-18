@@ -1,21 +1,21 @@
-Labb1 - Planering
+##  Labb1 - Planering
 
-##Problem 1     ############################################################################################33
-    ##indata: data/information som fås ifrån "användaren",
-    ##i detta fall platskod, enhetstyp och senast använt nummer.
-    ##utdata: data/information som programmet genererar och på något vis lämnar ut till användaren,
-    ##i detta fall utskrift på skärmen av kombinationen platskod-enhetstyp-"senaste nummer".
-    ##variabel som används för att hålla/generera utdata: hostnamn
-    ##regler:   platskod är text.
+##  Problem 1     ############################################################################################33
+    ##  indata: data/information som fås ifrån "användaren",
+    ##  i detta fall platskod, enhetstyp och senast använt nummer.
+    ##  utdata: data/information som programmet genererar och på något vis lämnar ut till användaren,
+    ##  i detta fall utskrift på skärmen av kombinationen platskod-enhetstyp-"senaste nummer".
+    ##  variabel som används för att hålla/generera utdata: hostnamn
+    ##  regler:   platskod är text.
         ##      enhetstyp är text.
         ##      senaste nummer är ett heltal.
         ##      bindestrecken hör bara till utskriftsformatet och hanteras inte annat än som mellanrumstecken
         ##      vid själva utskriften.
 
-    ##risker:   användaren blandar stora och små bokstäver vid inmatning.
+    ##  risker:   användaren blandar stora och små bokstäver vid inmatning.
         ##      användaren skriver siffran med bokstäver.
         ##      användaren skriver med nollan om siffran är under 10 tex 05 vilket inte är ett korrekt angivet heltal.
-    ##Planera:
+    ##  Planera:
         ##      fråga användaren om platskod
         ##      läs in data från användaren
         ##      fråga användaren om enhetstyp
@@ -36,18 +36,18 @@ Labb1 - Planering
                 
             ##      annars 
                         ##      skriv ut nästa hostnamn+1
-        ##säj adjö
+        ##  säj adjö
 
 
-    ##felmeddelandet:
-    ## här vill jag ha max 2 st siffror och om värdet är under 10 vill jag endast ha en siffra:3
-    ##Traceback (most recent call last):
+    ##  felmeddelandet:
+    ##  här vill jag ha max 2 st siffror och om värdet är under 10 vill jag endast ha en siffra:3
+    ##  Traceback (most recent call last):
     ##  File "/home/delta/Pictures/LabbProgtrammeringskursen/Programmering/Labb1/Problem1.py", line 18, in <module>
     ##    if(lastnumber+1 > 99):
     ##       ~~~~~~~~~~^~
-    ##TypeError: can only concatenate str (not "int") to str
+    ##  TypeError: can only concatenate str (not "int") to str
 
-    ##eftersom lastnumber fortfarande är/var en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
+    ##  eftersom lastnumber fortfarande är/var en textsträng så går det inte att lägga till heltalet 1 då de är olika typer.
 
     ##Platskod  Typ Senaste nr  Förväntat               Faktiskt                                                    OK?
     ##STO       srv     7       sto-srv-08              sto-srv-08                                                  ja
