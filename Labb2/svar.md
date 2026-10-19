@@ -46,6 +46,8 @@
                 ##  myGuessedeCorrect =true
             ##  annars
                 ##  skriv ut response
+        ##  om myGuessedCorect == False
+            ##  skriv ut "Rätt svar skall vara: HEMLIG_PORT
             
 
 ##  del 2:  Feltabell Nivå 1
