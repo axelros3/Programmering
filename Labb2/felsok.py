@@ -12,7 +12,7 @@ def rakna_over_grans(varden, grans):
 
 def medelvarde(varden):
     summa = 0
-    for i in range(1, len(varden)):
+    for i in range(0, len(varden)):
         summa = summa + varden[i]
     return summa / len(varden)
 
