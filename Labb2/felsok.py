@@ -6,7 +6,7 @@ GRANS = 80
 def rakna_over_grans(varden, grans):
     antal = 0
     for varde in varden:
-        if varde > grans:
+        if varde >= grans:
             antal = antal + 1
     return antal
 
