@@ -22,7 +22,7 @@
             ##  läs in svarstiden
             ##  skriv ut bedömningen av svarstiden med hjälp av timejudge()
 
-    ##  planeringNivå 2:
+    ##  planering Nivå 2:
         ##  indata: gissning
         ##  konstant: HEMLIG_PORT = 443, MAX_ANTAL_GISSNINGAR = 10
         ##  utdata: större mindre eller korrekt som en retursträng
@@ -51,6 +51,32 @@
             
     ##  fråga: Binär sökning, dela alltid kvarvarande intervall på hälften. den fungerad dock bara på 
     ##  sorterade datamängder (listor och liknande)
+
+    ##  Planering Nivå 3:
+    ##  def minSumma(lista)
+        ##mysum = 0
+        ##  för varje element i lista
+            ##  mysum += element
+        ##  returnera mysum
+    
+    ##  def mittMedel(lista)
+        ##  returnera (minSumma(lista)/längden av lista)
+
+    ##  minStorsta(lista)
+        ##  currentBiggest = 0
+        ##  för varje element i lista
+            ##  if(element > currentbiggest)
+                ##  currentBigest = element
+        return currentbiggest
+    
+    ##  varför är tidigare funktionsnamn på svenska....min hjärna är dum..
+    ##  myNumbersAbove(lista,minimumLimit)
+        ##  nrAboveLimit = 0
+        ##  för varje element i lista
+            ##  om element > minimumLimit
+                ##  nrAboveLimit += 1
+        return nrAboveLimit
+
 
 ##  del 2:  Feltabell Nivå 1
     ##  Svarstid    Förväntat               Faktiskt    OK?

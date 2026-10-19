@@ -1,6 +1,6 @@
 
 #//
-# Lösningsförslag till Problem 1 i programmeringskursens labb 2
+# Lösningsförslag till Nivå 2 i programmeringskursens labb 2
 # författare Axel Roselius
 # /#
 
