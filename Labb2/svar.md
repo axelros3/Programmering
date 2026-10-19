@@ -28,8 +28,9 @@
     ##  49          Utmärkt                 Utmärkt
     ##  50          Bra                     Bra
     ##  149         Bra                     Bra
-    ##  150         Långsam                 
-    ##  500         Ingen användbar kontakt 
--3 Ogiltigt värde
+    ##  150         Långsam                 Långsam
+    ##  500         Ingen användbar kontakt Ingen användbar kontakt
+    ##  -3          Ogiltigt värde          Ogiltigt Värde
+    
 ##  del 3:  Debuggern
 ##  del 4:  Refaktorering
