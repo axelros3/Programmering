@@ -100,7 +100,13 @@
 
 
 ##  del 2:  Feltabell
-
+    ##  Nr  Rad Feltyp              Hur hittade du felet?       Vad var fel?                                    Hur rättade du det?                     Hur kan felet förebyggas?
+    ##  1   ?   ?                   det gjorde jag inte         ?                                               har antagligen rättat det under rättningen efter inkopieringen som inte hade någon indentering alls 
+    ##  2   6   : tecken saknas     def utan : är syntaxfel     : tecken saknades vid funktiondefiniering       lade till :                             tänka på att alla funktioner avslutar "huvudet" med : i python. inklusive if, elif, while etc.
+    ##  3   22  fel datatyp         exekveringsfel              kan inte addera ett värde till en textsträng    konverterar värdet till en tesxtsträng  kunskap & erfarenhet... hade även kunnat byta + mot , så max(...) hade hanterats som ny variabel till print-funktionen
+    ##  4   23  index out of range  exekveringsfel              index 4 hamnar räknaren utanför listan
+    ##  5   9   logiskt             utskrift gav fel antal      gränsvärdet räknades inte med                   ändrade > till >=                       var tydlig med vad som skall inkluderas i intervall
+    ##  6   15  logiskt             utskrift gav fel medelvärde loopen startade inte på noll                    ändrade i range så första värdet är 0   kunskap & erfarehet....
 
 ##  del 3:  Debuggern
 ##  del 4:  Refaktorering
