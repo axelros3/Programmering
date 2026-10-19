@@ -20,6 +20,12 @@ def myBiggestValue(mylist):
             myCurrentBiggest = val
     return myCurrentBiggest
 
+def myNumbersAbove(mylist, minimumLimit):
+    nrAboveLimit = 0
+    for val in mylist:
+        if(val > minimumLimit):
+            nrAboveLimit += 1
+    return nrAboveLimit
 
 
 
