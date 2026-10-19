@@ -12,6 +12,6 @@
             ##  
             ##  läs in svarstiden
             ##  skriv ut bedömningen av svarstiden
-##  del 2
-##  del 3
-##  del 4
+##  del 2:  Feltabell
+##  del 3:  Debuggern
+##  del 4:  Refaktorering
