@@ -77,6 +77,13 @@
                 ##  nrAboveLimit += 1
         return nrAboveLimit
 
+    ##  nrofFailedLogins = listan från uppgiften...
+    ##  skriv ut summan och jämför med pythons inbyggda funktion
+    ##  skriv ut medelvärdet och jämför ....
+    ##  skriv ut största värdet och jämför .....
+    ##  skriv ut antalet på eller över given gräns och jämför...
+    
+
 
 ##  del 2:  Feltabell Nivå 1
     ##  Svarstid    Förväntat               Faktiskt    OK?
