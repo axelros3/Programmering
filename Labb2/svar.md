@@ -22,6 +22,16 @@
             ##  läs in svarstiden
             ##  skriv ut bedömningen av svarstiden med hjälp av timejudge()
 
+    ##  testfallstabell Nivå 1
+        ##  Svarstid    Förväntat               Faktiskt    OK?
+        ##  12          Utmärkt                 Utmärkt
+        ##  49          Utmärkt                 Utmärkt
+        ##  50          Bra                     Bra
+        ##  149         Bra                     Bra
+        ##  150         Långsam                 Långsam
+        ##  500         Ingen användbar kontakt Ingen användbar kontakt
+        ##  -3          Ogiltigt värde          Ogiltigt Värde
+
     ##  planering Nivå 2:
         ##  indata: gissning
         ##  konstant: HEMLIG_PORT = 443, MAX_ANTAL_GISSNINGAR = 10
@@ -82,18 +92,14 @@
     ##  skriv ut medelvärdet och jämför ....
     ##  skriv ut största värdet och jämför .....
     ##  skriv ut antalet på eller över given gräns och jämför...
-    
 
 
-##  del 2:  Feltabell Nivå 1
-    ##  Svarstid    Förväntat               Faktiskt    OK?
-    ##  12          Utmärkt                 Utmärkt
-    ##  49          Utmärkt                 Utmärkt
-    ##  50          Bra                     Bra
-    ##  149         Bra                     Bra
-    ##  150         Långsam                 Långsam
-    ##  500         Ingen användbar kontakt Ingen användbar kontakt
-    ##  -3          Ogiltigt värde          Ogiltigt Värde
+    ##  fråga 2:
+        ##  det tyder på att någon som inte har koll på lösenordet försöker ta sig in, behöver ju inte vara
+        ##  fel person så det skall ses som intrångsförsök men det är ju mest troligt att det är det.
+
+
+##  del 2:  
 
 
 ##  del 3:  Debuggern
