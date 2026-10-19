@@ -27,7 +27,7 @@
     ##  12          Utmärkt                 Utmärkt
     ##  49          Utmärkt                 Utmärkt
     ##  50          Bra                     Bra
-    ##  149         Bra                     
+    ##  149         Bra                     Bra
     ##  150         Långsam                 
     ##  500         Ingen användbar kontakt 
 -3 Ogiltigt värde
