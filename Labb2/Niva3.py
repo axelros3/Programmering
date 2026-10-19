@@ -10,6 +10,9 @@ def mySum(mylist):
         myTempSum += sum
     return myTempSum
 
+def myMiddleValue(mylist):
+    return (mySum(mylist)/len(mylist))
+
 
 
 
