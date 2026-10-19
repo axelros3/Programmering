@@ -49,6 +49,8 @@
         ##  om myGuessedCorect == False
             ##  skriv ut "Rätt svar skall vara: HEMLIG_PORT
             
+    ##  fråga: Binär sökning, dela alltid kvarvarande intervall på hälften. den fungerad dock bara på 
+    ##  sorterade datamängder (listor och liknande)
 
 ##  del 2:  Feltabell Nivå 1
     ##  Svarstid    Förväntat               Faktiskt    OK?
