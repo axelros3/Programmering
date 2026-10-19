@@ -23,5 +23,13 @@
             ##  skriv ut bedömningen av svarstiden med hjälp av timejudge()
 
 ##  del 2:  Feltabell
+    ##  Svarstid    Förväntat               Faktiskt    OK?
+    ##  12          Utmärkt                 Utmärkt
+    ##  49          Utmärkt                 
+    ##  50          Bra                     
+    ##  149         Bra                     
+    ##  150         Långsam                 
+    ##  500         Ingen användbar kontakt 
+-3 Ogiltigt värde
 ##  del 3:  Debuggern
 ##  del 4:  Refaktorering
