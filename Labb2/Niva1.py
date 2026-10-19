@@ -16,7 +16,7 @@ def timeJudge(svarstid):
     return "Utmärkt" 
 
 print("Välkommen till svarstidbedömmaren\njag vill ha svarstiden")
-mySvarstid = int(input("Ge mig svarstiden i millisekunder"))
+mySvarstid = int(input("Ge mig svarstiden i millisekunder: "))
 
 print(f"bedömmningen av svarstiden är {timeJudge(mySvarstid)}")
 
