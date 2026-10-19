@@ -1,13 +1,13 @@
 ## Labb2 - svar
 
 ##  del 1
-    ##  planering
+    ##  planering Nivå 1:
         ##  indata: svarstid
         ##  utdata: bedömning
         ##  regler: svarstid får inte vara negativt (under noll)
             ##      500
 
-        ##pseudokod
+        ##  pseudokod:
             ##  definiera funktionen timeJudge(svarstid)
                 ##  om svarstid < 0 
                     ##  return "Ogiltigt värde"
@@ -22,7 +22,33 @@
             ##  läs in svarstiden
             ##  skriv ut bedömningen av svarstiden med hjälp av timejudge()
 
-##  del 2:  Feltabell
+    ##  planeringNivå 2:
+        ##  indata: gissning
+        ##  konstant: HEMLIG_PORT = 443, MAX_ANTAL_GISSNINGAR = 10
+        ##  utdata: större mindre eller korrekt som en retursträng
+
+    ##  pseudokod:
+        ##definiera funktion myValueCheck(gissning)
+            ##  om gissning > HEMLIG_PORT
+                ##  return "För högt"
+            ##  annars om gissning <HEMLIG_PORT
+                ##  return "För lågt"
+            return "Korrekt"
+        
+        myGuessedCorrect = false
+        myNRofGuesees = 0
+        ##  så länge antalet gissningar < MAX_ANTAL_GISSNINGAR OCH myGuessedCorrect == false
+            ##  läs in gissning
+            ##  myNrofGuesses incremetera med 1
+            ##  response = myValueCheck(gissning)
+            ##  om reponse == "Korrekt"
+                ##  skriv ut "du har gissat rätt!! du har använt mynrofguesseseseseseesese försök"
+                ##  myGuessedeCorrect =true
+            ##  annars
+                ##  skriv ut response
+            
+
+##  del 2:  Feltabell Nivå 1
     ##  Svarstid    Förväntat               Faktiskt    OK?
     ##  12          Utmärkt                 Utmärkt
     ##  49          Utmärkt                 Utmärkt
@@ -31,6 +57,7 @@
     ##  150         Långsam                 Långsam
     ##  500         Ingen användbar kontakt Ingen användbar kontakt
     ##  -3          Ogiltigt värde          Ogiltigt Värde
-    
+
+
 ##  del 3:  Debuggern
 ##  del 4:  Refaktorering
