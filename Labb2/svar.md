@@ -171,3 +171,7 @@
     ##  utmaning 4:
         ##  fråga: varför är det bättre att använda konstanten?
         ##  skulle man ändra värdet för gränsen dvs konstanten GRANS, så slipper man nu byta i textstängen också
+
+    ##  utmaning 5:
+        ##  när exekveringen lämnar funktionen så tas de variabler som skapades i funktionen bort så de inte
+        ##  går att använda i "huvudprogrammet" och för att frigöra minne.
