@@ -114,11 +114,20 @@
     ##  Timmar med larm: 2
 
     ##  När programmet pausar   antal   misslyckade timmar_med_larm
-    ##  Rad 5, varv 1
-    ##  Rad 5, varv 2
-    ##  Rad 5, varv 3
-    ##  Rad 5, varv 4
-    ##  Rad 8, efter loopen
+    ##  Rad 5, varv 1           3       0           0
+    ##  Rad 5, varv 2           0       3           1
+    ##  Rad 5, varv 3           5       3           1
+    ##  Rad 5, varv 4           1       8           2
+    ##  Rad 8, efter loopen     1       9           2
+
+    ##  svar på frågor
+
+    ##  1:  utskrift från programmet
+    ##  Misslyckade totalt: 9
+    ##  Timmar med larm: 2
+    ##  stämmer med min "gissning"
+
+    ##  2:  för att 
 
 
 
