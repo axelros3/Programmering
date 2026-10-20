@@ -167,3 +167,7 @@
     ##  underhålla och felsöka koden.
 
 
+##  Utmaningar
+    ##  utmaning 4:
+        ##  fråga: varför är det bättre att använda konstanten?
+        ##  skulle man ändra värdet för gränsen dvs konstanten GRANS, så slipper man nu byta i textstängen också
