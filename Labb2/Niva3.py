@@ -28,11 +28,22 @@ def myNumbersAbove(mylist, minimumLimit):
             nrAboveLimit += 1
     return nrAboveLimit
 
+def myHighestValueIndex(mylist):
+    myHighestvalue = 0
+    myHighestIndex = 0
+    for i in range(0,len(mylist)):
+        if (mylist[i] > myHighestvalue):
+            myHighestvalue = mylist[i]
+            myHighestIndex = i
+    return myHighestIndex
+
+
+
 nrfailedLogins = [0, 2, 1, 7, 0, 12, 3,0]
 
 print(f"summan är: {mySum(nrfailedLogins)}\noch pytons inbyggda säger: {sum(nrfailedLogins)}\n\n")
 print(f"medelvärdet är: {myMiddleValue(nrfailedLogins)}\noch pytons inbyggda säger: {statistics.mean(nrfailedLogins)}\n\n")
 print(f"största värdet är: {myBiggestValue(nrfailedLogins)}\noch pytons inbyggda säger: {max(nrfailedLogins)}\n\n")
 print(f"antalet på gränsen eller högre är: {myNumbersAbove(nrfailedLogins,5)}\noch pyton verkar inte ha en inbyggd funktion för detta")
-
+print(f"timman med flest misslyckade inloggningar är timme: {myHighestValueIndex(nrfailedLogins)}")
 
