@@ -109,4 +109,14 @@
     ##  6   15  logiskt             utskrift gav fel medelvärde loopen startade inte på noll                    ändrade i range så första värdet är 0   kunskap & erfarehet....
 
 ##  del 3:  Debuggern
+    ##  programmet debug.py bör skriva ut:
+    ##  Misslyckade totalt: 9
+    ##  Timmar med larm: 2
+
+
+
+
+
+
+
 ##  del 4:  Refaktorering
