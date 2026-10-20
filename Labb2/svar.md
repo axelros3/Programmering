@@ -127,9 +127,17 @@
     ##  Timmar med larm: 2
     ##  stämmer med min "gissning"
 
-    ##  2:  för att 
+    ##  2:  för att den variabeln bara räknas upp om antal är 3 eller större för varje enskilt varv
 
+    ##  3:  antal har värdet 1 pga att sista varvet i loopen så sattes antal till 1 och då python är
+    ##  annurlunda mot många andra språk så finns variabeln kvar, hade det varit tex C# så hade
+    ##  variabeln antal upphört att existera när vi lämnar loopen. men python har bara globala
+    ##  variabler så även om man deklarerar en variabel i en loop så kan man sedan utanför loopen
+    ##  använda variabeln...
 
+    ##  4:  med hjälp av debugger kan man se vad värdena på variablerna är vid specifika tillfällen
+    ##  och därmed se om de är som förväntat och kan då också visa resultat av jämförelser
+    ##  i if satsernas vilkor.
 
 
 ##  del 4:  Refaktorering
