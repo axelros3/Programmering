@@ -15,8 +15,19 @@ def timeJudge(svarstid):
         return "Bra"
     return "Utmärkt" 
 
-print("Välkommen till svarstidbedömmaren\njag vill ha svarstiden")
-mySvarstid = int(input("Ge mig svarstiden i millisekunder: "))
 
-print(f"bedömmningen av svarstiden är {timeJudge(mySvarstid)}")
+run = True
+print("Välkommen till svarstidbedömmaren\njag vill ha svarstiden")
+while(run):
+    mySvarstid = int(input("Ge mig svarstiden i millisekunder: "))
+    myJudgedTime = timeJudge(mySvarstid)
+
+    if(myJudgedTime != "Ogiltigt Värde"):
+        run = False
+    else:
+        print(f"{myJudgedTime} försök igen")
+
+
+
+print(f"bedömmningen av svarstiden är {myJudgedTime}")
 
