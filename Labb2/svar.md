@@ -141,3 +141,12 @@
 
 
 ##  del 4:  Refaktorering
+    ##  aha... kom på varför det blev fel med citat tecknen förut.... jag kopierade från googles preview
+    ## inte från dokumentet i sig...
+
+    ##  utskrift från rorig
+    ##  tot 1055
+    ##  snitt 211.0
+    ##  hog 2
+
+    ##
