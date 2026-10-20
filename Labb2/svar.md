@@ -149,4 +149,21 @@
     ##  snitt 211.0
     ##  hog 2
 
-    ##
+    ##  frågor
+    ##  1: jag skrev en funktion för varje uträkning, jag minskade därmed antalet variabler vi behöver i
+    ##  "huvudprogrammet" till en enda som vi har för våra tider. blir lite upprepning men varje funktion
+    ##  utför en specifik uppgift istället för att göra både totalsummans uträkning och medelvärdet
+    ##  och hur många svarstider som är långa samtidigt, vilket lätt blir rörigt även om det kan anses
+    ##  vara tidseffektift.
+
+    ##  sedan har jag förklarande utskrifter så att den som läser inte behöver ha sett koden för att förstå.
+
+    ##  2: jag flyttade egentligen bara den kod som redan fanns till respektive funktion, sedan behöver man
+    ##  naturligtvis anpassa sig efter den nya verkligheten med funktioner, men själva beräkningarna ser ut
+    ##  på samma sätt minus det som inte längre är av intresse för den enskilda uppgiften.
+
+    ##  3: om man inte använder "läsbar kod" eller ännu värre flera olika namnstandarder samtidigt
+    ##  så blir det svårare att utläsa vad koden gör. vilket leder till att det blir ännu svårare att
+    ##  underhålla och felsöka koden.
+
+    
