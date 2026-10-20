@@ -4,8 +4,10 @@
 # författare Axel Roselius
 # /#
 
+import random
+
 ##Konstanter
-HEMLIG_PORT = 443
+HEMLIG_PORT = random.randint(1,1023)
 MAX_ANTAL_GISSNINGAR = 10
 
 def myValueCheck(gissning):
