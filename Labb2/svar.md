@@ -156,7 +156,7 @@
     ##  och hur många svarstider som är långa samtidigt, vilket lätt blir rörigt även om det kan anses
     ##  vara tidseffektift.
 
-    ##  sedan har jag förklarande utskrifter så att den som läser inte behöver ha sett koden för att förstå.
+    ##  sedan har jag förklarande utskrifter så att den som kör/läser inte behöver ha sett koden för att förstå.
 
     ##  2: jag flyttade egentligen bara den kod som redan fanns till respektive funktion, sedan behöver man
     ##  naturligtvis anpassa sig efter den nya verkligheten med funktioner, men själva beräkningarna ser ut
@@ -166,4 +166,4 @@
     ##  så blir det svårare att utläsa vad koden gör. vilket leder till att det blir ännu svårare att
     ##  underhålla och felsöka koden.
 
-    
+
