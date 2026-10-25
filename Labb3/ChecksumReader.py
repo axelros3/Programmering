@@ -6,8 +6,13 @@ import hashlib
 
 def berakna_sha256(filnamn): 
     with open(filnamn, "rb") as fil: 
-        return hashlib.file_digest(fil, "sha256").hexdigest() 
+        return hashlib.file_digest(fil, "sha256").hexdigest()
+
+
+
+def CheckSumReader():
     filnamn = input("Fil att kontrollera: ").strip() 
+
     try: 
         summa = berakna_sha256(filnamn) 
     except FileNotFoundError: 
