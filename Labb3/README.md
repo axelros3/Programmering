@@ -1,10 +1,34 @@
-# Lab 3 – [namnet på ditt program]
-    ##  Gjort av: Axel Roselius (i sammarbete med mig själv då min stationära dator är uppsatt för att fungera med mitt privata githubkonto via visual studio)
+# Lab 3 – MultiSolver
+    ##  Gjort av: Axel Roselius (i sammarbete med mig själv då min stationära dator är uppsatt för att
+    ##  fungera med mitt privata githubkonto via visual studio)
 ## Del 1: Projektbeskrivning
+    ##  ett program som anropar de olika modulerna från en meny. modulerna utför varsin uppgift som tex att
+    ##  kontrollera att service på angiven IP-adress och port är online.
+    ##  utifrån en huvudmeny väljer användaren en modul att gå till och där utför användaren sedan den uppgift
+    ##  som modulen hjälper/löser.
+    ##  de olika modulerna är:
+        ##  Service Control
+	    ##  Log analyzer
+	    ##  Checksum control
+	    ##  Subnet Planner
+	    ##  Config Generator
+	    ##  Password Control
 
-    
-
-
+    ##  Service Control:
+        ##  kontrollerar om service på angiven IP-adress och port svarar
+	##  Log analyzer:
+        ##  öppnar en logfil och kontrollerar hur många gånger inloggningsförsök skett och från vilken IP-adress
+	##  Checksum control:
+        ##  räknar ut hashen för en given fil och kontrollerar mot en angiven hash
+	##  Subnet Planner:
+        ##  räknar ut om angiven ip-adress till nätverk är korrekt angiven och när nätverket väl är angivet kan
+        ##  den kontrollera att en viss ip-adress ingår i det angivna nätverket
+	##  Config Generator:
+        ##  "räknar" ut vilka kommandon som skall köras på en switch för att konfigurera ett interface som
+        ##  accessport för ett angivet VLAN
+	##  Password Control
+        ##  kontrollerar ett lösenord mot lista med vanliga/blockade ord/innehåll och talar om vad eventuella
+        ##  problem är med lösenordet
 
 
 ## Del 2: Pseudokod och flödesschema
@@ -29,7 +53,7 @@
                 ##  om 5
                     ##  anropa coonfig generator
                 ##  om 6
-                    ##  anropa passwordController
+                    ##  anropa password Controller
 
         ##  visa meny deltastart.py
             skriv ut en "snygg" meny

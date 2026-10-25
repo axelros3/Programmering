@@ -19,6 +19,7 @@ def CheckSumReader():
         print("Fel: filen", filnamn, "finns inte.") 
     else: 
         forvantad = input("Checksumma från tillverkaren: ").strip().lower() 
+    
     if summa == forvantad: 
         print("OK: checksumman stämmer.") 
     else: 
