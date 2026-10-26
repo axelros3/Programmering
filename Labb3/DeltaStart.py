@@ -40,7 +40,7 @@ def las_heltal(fraga, minsta, storsta):
 
 
 def visa_meny(): 
-	print("\n\n[Programmets namn] – huvudmeny") 
+	print("\n\nDeltas Multisolver – huvudmeny") 
 	print("1. Service Control") 
 	print("2. Log analyzer")
 	print("3. Checksum control")
@@ -55,7 +55,7 @@ def deltaStartPoint(): # Huvudloop
 	run = True
 	while (run): 
 		visa_meny() 
-		val = las_heltal("Välj 0, 1, 2 ... 6: ", 0, 6)
+		val = las_heltal("skriv ett heltal motsvarande det program du vill köra\nendast sifror mellan 0 och 6 3 kommer godkännas: ", 0, 6)
 
 		match val:
 			case 0:

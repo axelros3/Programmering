@@ -86,4 +86,7 @@
             ##  returnera falskt om vi ändå kommer hit för snyggare avslut
 
 ## Del 4: Användartest
+    ##  testfil för checksumman 
+        ##  namn: testfil_frameBIOS.bin
+        ##  hash: E7A088E2D22015659A49F02660E71E05ECF74BC9B9273F3164B2F5D8311BA397
 ## Del 5: Förbättringar och reflektion
