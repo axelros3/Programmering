@@ -33,7 +33,7 @@ def deltaStartPoint(): # Huvudloop
 	run = True
 	while (run): 
 		visa_meny() 
-		val = DeltaUtilities.las_heltal("skriv ett heltal motsvarande det program du vill köra\nendast sifror mellan 0 och 6 3 kommer godkännas: ", 0, 6)
+		val = DeltaUtilities.las_heltal("skriv ett heltal motsvarande det program du vill köra\nendast sifror mellan 0 och 6 kommer godkännas: ", 0, 6)
 
 		match val:
 			case 0:
