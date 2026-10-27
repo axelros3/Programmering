@@ -2,7 +2,7 @@
 
 
 import hashlib
-import os
+import DeltaUtilities
 
 
 def berakna_sha256(filnamn): 
@@ -12,11 +12,14 @@ def berakna_sha256(filnamn):
 
 
 def CheckSumReader():
-    filnamn = input("Ange namn på fil i mappen Labb3 att kontrollera: ").strip() 
     summa=0
     forvantad = 1
-    full_path = os.path.realpath(__file__)
-    filePath = os.path.dirname(full_path) + "/"
+
+    ## hämta sökvägen till mappen som programmet arbetar i
+    filePath = DeltaUtilities.myFilePath()
+
+    filnamn = input("Ange namn på fil i mappen Labb3 att kontrollera: ").strip() 
+    
     try: 
         summa = berakna_sha256(filePath + filnamn) 
     except FileNotFoundError: 

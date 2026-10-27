@@ -1,16 +1,22 @@
 
 
 
+from math import log
 
+import DeltaUtilities
 
 GRANS = 3
 
 
-def logAnalyzer():
+def logAnalyzer(logfil):
     ip_lista = [] 
-    antal = [] 
+    antal = []
+
+    ## hämta sökvägen till mappen som programmet arbetar i
+    filePath = DeltaUtilities.myFilePath()
+    print(f"\n\nangiven loggfil: {filePath + logfil}:")
     try:
-        with open("auth.log", encoding="utf-8") as fil: 
+        with open(filePath + logfil, encoding="utf-8") as fil: 
             for rad in fil: 
                 if "Failed password" in rad: 
                     delar = rad.split() 
@@ -22,11 +28,13 @@ def logAnalyzer():
                         ip_lista.append(ip)
                         antal.append(1) 
     except FileNotFoundError: 
-            print("Fel: hittar inte filen auth.log.") 
+            print("fil Fel: hittar tyvär inte filen auth.log.") 
 
     for index in range(len(ip_lista)): 
         if antal[index] >= GRANS: 
-            print("Misstänkt:", ip_lista[index], "–", antal[index], "misslyckade försök") 
+            print(f"Misstänkt aktivitet: från IP {ip_lista[index]} har vi {antal[index]} misslyckade inloggningsförsök") 
 
 
-
+def startLogAnalyzer():
+    print("vilken logfil vill du kontrollera?")
+    logfil = input("hela filnamnet inklusive filändelsen tack: ")
