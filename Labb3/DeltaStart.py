@@ -4,15 +4,7 @@
 # /#
 
 
-#/
-#import os, sys
-#FILELOCATION = os.path.abspath(os.path.dirname(sys.argv[0]))
-#pathParts = FILELOCATION.split("\\")
-#index = 0
-#for part in pathParts:
-#	print(f"part{index}: {part}")
-#
-#/
+
 
 
 import ConfigGenerator
@@ -21,22 +13,8 @@ import serviceControl
 import subNetPlanner
 import PasswordControl
 import logAnaliser
+import DeltaUtilities
 
-
-
-
-
-# Frågar tills användaren skriver ett heltal mellan minsta och storsta 
-def las_heltal(fraga, minsta, storsta): 
-	while True: 
-		try:
-			tal = int(input(fraga)) 
-		except ValueError: 
-			print("Fel: skriv ett heltal, till exempel", minsta) 
-		else: 
-			if minsta <= tal <= storsta: 
-				return tal 
-		print("Fel: talet måste vara", minsta, "till", storsta) 
 
 
 def visa_meny(): 
@@ -55,7 +33,7 @@ def deltaStartPoint(): # Huvudloop
 	run = True
 	while (run): 
 		visa_meny() 
-		val = las_heltal("skriv ett heltal motsvarande det program du vill köra\nendast sifror mellan 0 och 6 3 kommer godkännas: ", 0, 6)
+		val = DeltaUtilities.las_heltal("skriv ett heltal motsvarande det program du vill köra\nendast sifror mellan 0 och 6 3 kommer godkännas: ", 0, 6)
 
 		match val:
 			case 0:
