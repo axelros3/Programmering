@@ -27,9 +27,11 @@ def addServer(serverlist):
     print("skriv in IP-adressen till servern som du vill lägga till")
     run = True
     while run:
-        nyIP = input("skriv bara IP-adressen, på formen 192.168.20.32: ")   # för nu så förutsätter vi att den är korrekt 
+        nyIP = input("skriv bara IP-adressen, på formen 192.168.20.32: ")
         if(isIPnoPrefix(nyIP)):
             run = False
+        else:
+            print("det var inte en korrekt ip-adress, vänligen försök igen")
 
     if nyIP in serverlist:
         print("den IP-adressen finns redan i listan")
