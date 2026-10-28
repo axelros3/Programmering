@@ -2,6 +2,7 @@
 
 import socket
 import DeltaUtilities
+from subNetPlanner import isIPnoPrefix
 
 
 
@@ -24,7 +25,12 @@ def checkStatus(serverlist, portlist):
 
 def addServer(serverlist):
     print("skriv in IP-adressen till servern som du vill lägga till")
-    nyIP = input("skriv bara IP-adressen, på formen 192.168.20.32: ")   # för nu så förutsätter vi att den är korrekt 
+    run = True
+    while run:
+        nyIP = input("skriv bara IP-adressen, på formen 192.168.20.32: ")   # för nu så förutsätter vi att den är korrekt 
+        if(isIPnoPrefix(nyIP)):
+            run = False
+
     if nyIP in serverlist:
         print("den IP-adressen finns redan i listan")
         return serverlist

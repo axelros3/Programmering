@@ -25,8 +25,10 @@ def inNet(myNet, myIp = "192.168.10.57"):
 
 
 ##  en liten kontrollfunktion för ip-adress är plannerad utan prefix
-def isIPnoPrefix(myoktetts):
+def isIPnoPrefix(myAdress):
     try:
+        myoktetts = myAdress.split(".")         #   sära på okteterna
+            
         for index in range(len(myoktetts)):
             myoktetts[index] = int(myoktetts[index])
     except ValueError:
@@ -46,7 +48,6 @@ def getIPwithPrefix(text):
         myIP = input(text).strip()
         try:
             myAdress, myprefix = myIP.split("/")    #   sära på prefix och ip-adresesn
-            myoktetts = myAdress.split(".")         #   sära på okteterna
             
             myprefix = int(myprefix)
             if  (1 <= myprefix <= 32):
@@ -54,7 +55,7 @@ def getIPwithPrefix(text):
         except ValueError:
             print("det blev tyvär fel någonstans vänligen dubbelkolla att du skriver rätt och försök igen.\n")
         else:
-            run = not isIPnoPrefix(myoktetts)
+            run = not isIPnoPrefix(myAdress)
     return myIP
 
 
