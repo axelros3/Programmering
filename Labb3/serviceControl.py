@@ -37,7 +37,8 @@ def addServer(serverlist):
         print("den IP-adressen finns redan i listan")
         return serverlist
     print("lägger till den nya IP-adressen i listan")
-    return serverlist.append(nyIP)
+    serverlist.append(nyIP)
+    return serverlist
 
 
 def addPort(portlist):
@@ -47,7 +48,8 @@ def addPort(portlist):
         print("den porten finns redan i listan")
         return portlist
     print("lägger till den nya IP-adressen i listan")
-    return portlist.append(nyport)
+    portlist.append(nyport)
+    return portlist
 
 
 def serviceMenu():
@@ -69,11 +71,11 @@ def ServiceControl():
             case 0:
                 run = False
             case 1:
-                servrar = addServer()
+                servrar = addServer(servrar)
             case 2:
-                portar = addPort()
+                portar = addPort(portar)
             case 3:
-                checkStatus(servrar,portar)
+                checkStatus(servrar, portar)
     print("avslutar nu service kontrollen")
 
 
