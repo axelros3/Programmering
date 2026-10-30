@@ -91,7 +91,7 @@
         ##  hash: E7A088E2D22015659A49F02660E71E05ECF74BC9B9273F3164B2F5D8311BA397
 
     ##  respons från testaren:
-        ##  inkonsikventa menyer del-meny vs huvud-meny
+        ##  inkonsekventa menyer del-meny vs huvud-meny
         ##  byter mellan språk svenska och engelska 
         ##  vissa moduler har dåligt med info till användaren om vad som förväntas i form av indata.
         ##  dåligt med assertions på input
@@ -99,3 +99,8 @@
         ##  checkumman behöver mer info och en lista på tillgängliga filer att testa  
 
 ## Del 5: Förbättringar och reflektion
+    ##  jag har valt att bara laga input hanteringen och att skriva om menyerna
+    ##  så samtliga är på svenska, detta mest på grund av tidsbrist.
+    ##  jag hade även tänkt redan från början att service kontrollen skall spara
+    ##  ip-adresser och portnummer i en fil som sedan skall läsas in vid start
+    ##  nästa gång (del)programmet körs, detta har jag dock inte hunnit med ännu.
