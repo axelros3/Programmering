@@ -1,7 +1,6 @@
 
 
 
-from math import log
 
 import DeltaUtilities
 
@@ -28,7 +27,7 @@ def logAnalyzer(logfil):
                         ip_lista.append(ip)
                         antal.append(1) 
     except FileNotFoundError: 
-            print("fil Fel: hittar tyvär inte filen auth.log.") 
+            print(f"fil Fel: hittar tyvär inte filen {logfil}.") 
 
     for index in range(len(ip_lista)): 
         if antal[index] >= GRANS: 

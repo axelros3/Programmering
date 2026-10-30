@@ -18,13 +18,13 @@ import DeltaUtilities
 
 
 def visa_meny(): 
-	print("\n\nDeltas Multisolver – huvudmeny") 
-	print("1. Service Control") 
-	print("2. Log analyzer")
-	print("3. Checksum control")
-	print("4. Subnet Planner")
-	print("5. Config Generator")
-	print("6. Password Control")
+	print("\n\nDeltas Multilösning – huvudmeny") 
+	print("1. Service Kontroll") 
+	print("2. Log kontroll")
+	print("3. fil kontrol /(hashsumma/)")
+	print("4. Subnäts planerare")
+	print("5. Swich konfigurations Generator")
+	print("6. lösenordsKontrol")
 	print("0. Avsluta") 
 
 

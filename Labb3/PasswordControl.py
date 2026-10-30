@@ -19,7 +19,8 @@ def kontrollera(losenord, anvandarnamn):
 
 
 def PasswordControl():
-    print("välkommen till lösenordskontrollen\här skall du skriva ditt användarnamn och det lössenord du tänkt sätta på ditt konto\n")
+    print("välkommen till lösenordskontrollen")
+    print("här skall du skriva ditt användarnamn och det lössenord du tänkt sätta på ditt konto\n")
     run = True
     while (run):
         myUsername = input("vad är ditt anvädarnamn? ")
@@ -28,7 +29,7 @@ def PasswordControl():
         print(kontrollera(myUsername, myPassword))
 
         print("vill du prova igen?")
-        if(not DeltaUtilities.myTryAgain()):
+        if not (DeltaUtilities.myTryAgain()):
             run = False
             print("Hej då, välkommen åter")
 

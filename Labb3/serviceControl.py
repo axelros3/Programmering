@@ -53,10 +53,10 @@ def addPort(portlist):
 
 
 def serviceMenu():
-    print("\n\nService Control – menu")
-    print("1. add a server")
-    print("2. add a port")
-    print("3. check status")
+    print("\n\nService Kontroll – menu")
+    print("1. lägg till en server")
+    print("2. lägg till en port")
+    print("3. kontrollera status")
     print("0. Avsluta") 
 
 def ServiceControl():

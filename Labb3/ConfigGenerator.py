@@ -15,12 +15,12 @@ INTERFACE = "GigabitEthernet1/0/"
 import DeltaUtilities
 
 def access_port(port, vlan, beskrivning):
-    print("följande skall skrivas/kopieras in i konfigurationsläget dvs efter \"config terminal\":")
+    print("följande skall skrivas/kopieras in i konfigurationsläget dvs efter \"config terminal\":\n")
     print("interface", INTERFACE + str(port)) 
     print(" description", beskrivning) 
     print(" switchport mode access") 
     print(" switchport access vlan", vlan) 
-    print(" end, om du är klar med alla portar eller exit, om du vill konfigurera fler portar ") 
+    print(" end, om du är klar med alla portar eller exit, om du vill konfigurera fler portar \n\n") 
 
 
 ##/
@@ -32,7 +32,7 @@ def ConfigGenerator():
     
         myPort = DeltaUtilities.las_heltal("skriv här vilken port på switchen som skall användas: ", 1, 32)
         myVlan = DeltaUtilities.las_heltal("skriv här vilket VLAN som skall användas: ",0 , 4095)
-        myDescription = input("skriv här beskrivningen för porten´: ")
+        myDescription = input("skriv här beskrivningen för porten: ")
 
         access_port(myPort, myVlan, myDescription)
         print("vill du fortsätta med en ny port?")
