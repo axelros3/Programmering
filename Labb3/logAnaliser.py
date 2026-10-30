@@ -38,3 +38,4 @@ def logAnalyzer(logfil):
 def startLogAnalyzer():
     print("vilken logfil vill du kontrollera?")
     logfil = input("hela filnamnet inklusive filändelsen tack: ")
+    logAnalyzer(logfil)

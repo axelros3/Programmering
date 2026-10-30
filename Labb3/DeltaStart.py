@@ -41,7 +41,7 @@ def deltaStartPoint(): # Huvudloop
 			case 1:
 				serviceControl.ServiceControl()
 			case 2:
-				logAnaliser.logAnalyzer()
+				logAnaliser.startLogAnalyzer()
 			case 3:
 				ChecksumReader.CheckSumReader()
 			case 4:

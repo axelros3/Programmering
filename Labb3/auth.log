@@ -1,0 +1,4 @@
+Oct 20 09:14:02 srv-01 sshd[812]: Failed password for admin from 203.0.113.45 port 52144  ssh2 
+Oct 20 09:14:05 srv-01 sshd[812]: Failed password for admin from 203.0.113.45 port 52150  ssh2 
+Oct 20 09:14:09 srv-01 sshd[812]: Failed password for root from 203.0.113.45 port 52161 ssh2 Oct 20 09:20:31 srv-01 sshd[901]: Accepted password for anna from 192.0.2.10 port 50022 ssh2 Oct 20 09:41:12 srv-01 sshd[955]: Failed password for omar from 192.0.2.24 port 51880 ssh2 Oct 20 09:41:20 srv-01 sshd[955]: Accepted password for omar from 192.0.2.24 port 51881 ssh2 Oct 20 10:02:44 srv-01 sshd[1022]: Failed password for test from 198.51.100.7 port 40112 ssh2 Oct 20 10:02:47 srv-01 sshd[1022]: Failed password for test from 198.51.100.7 port 40118 ssh2 Oct 20 10:02:51 srv-01 sshd[1022]: Failed password for guest from 198.51.100.7 port 40125  ssh2 
+Oct 20 10:02:55 srv-01 sshd[1022]: Failed password for user from 198.51.100.7 port 40131 ssh2 
