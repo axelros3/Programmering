@@ -89,4 +89,13 @@
     ##  testfil för checksumman 
         ##  namn: testfil_frameBIOS.bin
         ##  hash: E7A088E2D22015659A49F02660E71E05ECF74BC9B9273F3164B2F5D8311BA397
+
+    ##  respons från testaren:
+        ##  inkonsikventa menyer del-meny vs huvud-meny
+        ##  byter mellan språk svenska och engelska 
+        ##  vissa moduler har dåligt med info till användaren om vad som förväntas i form av indata.
+        ##  dåligt med assertions på input
+        ##  subnet planner ...
+        ##  checkumman behöver mer info och en lista på tillgängliga filer att testa  
+
 ## Del 5: Förbättringar och reflektion
