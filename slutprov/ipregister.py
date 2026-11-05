@@ -101,10 +101,10 @@ def addDevice():
     description = input("skriv enhetens namn eller beskrivning: ")
     newIP = getIPnoPrefix("skriv in IP-adressen: ")
     if not (inNet(theNet, newIP)):
-        print(f"{newIP} är inte inom nätverket {theNet}")
-    else:
-        print("sparar enheten i listan....")
-        theDevices.append((description, newIP))
+        print(f"VARNING: {newIP} är inte inom nätverket {theNet}")
+    
+    print("sparar enheten i listan....")
+    theDevices.append((description, newIP))
     
 
 
@@ -128,7 +128,7 @@ def startpunkt():
     changeNet()
     while run:
         visa_meny()
-        menyval = las_heltal("skriv endast heltal för att välja alternativen i menyn", 0, 3)
+        menyval = las_heltal("skriv endast heltal för att välja alternativen i menyn: ", 0, 3)
         match menyval:
             case 0:
                 run = False
