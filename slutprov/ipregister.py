@@ -3,8 +3,14 @@
 
 import ipaddress
 
+##  vår behållare för enheter
 theDevices = []
 
+
+#/
+# funktion som läser in och kontrollerar att nätverksadress är korrekt angiven och
+# returnerar nätet som en ipadress.ip_network
+# /#
 def getNet():
     run = True
     myNet 
@@ -18,14 +24,18 @@ def getNet():
             run = False
     return myNet
 
-
+#/
+# funktion som kontrollerar om medskickad IP-adress finns i medskickat nätverk
+# /#
 def inNet(myNet, myIp = "192.168.10.57"):
     if ipaddress.ip_address(myIp) in myNet:
         return True
     return False
 
 
-##  en liten kontrollfunktion för ip-adress är plannerad utan prefix
+#/
+# funktion för att kontrollera om en ip-adress (utan prefix) är korrekt angiven, 
+# /#
 def isIPnoPrefix(myAdress):
     try:
         myoktetts = myAdress.split(".")         #   sära på okteterna
@@ -42,7 +52,9 @@ def isIPnoPrefix(myAdress):
     return True
 
 
-##  en liten kontrollfunktion för ip-adress är plannerad med prefix
+#/
+# funkton för att läsa in en nätverksadress (ip-address med prefix) och kontrollera att den är korrekt angiven
+# /#
 def getIPwithPrefix(text):
     run = True
     while run:
@@ -62,6 +74,9 @@ def getIPwithPrefix(text):
     return myIP
 
 
+#/
+# funktion för att läsa in en IP-adress, utan prefix, och kontrollera att den är korrekt angiven
+# /#
 def getIPnoPrefix(text):
     run = True
     while run:
@@ -71,6 +86,9 @@ def getIPnoPrefix(text):
     return myIP
 
 
+#/
+# funnktion för att läsa in ett heltal, avslutas först när ett korrekt heltal har angivits
+# /#
 def las_heltal(fraga, minsta, storsta): 
 	while True: 
 		try:
@@ -86,7 +104,9 @@ def las_heltal(fraga, minsta, storsta):
 
 
 
-
+#/
+# funktion för att skriva ut menyvalen i huvudmeny i huvudloopen
+# /#
 def visa_meny(): 
 	print("\nAxels – huvudmeny") 
 	print("1. lägg till enhet") 
@@ -95,33 +115,55 @@ def visa_meny():
 	print("0. Avsluta") 
 
 
-
+#/
+# funktion för att lägga till en ny enhet
+# /#
 def addDevice(myNet):
-    description = input("skriv enhetens namn eller beskrivning: ")
-    newIP = getIPnoPrefix("skriv in IP-adressen: ")
-    if not (inNet(myNet, newIP)):
-        print(f"VARNING: {newIP} är inte inom nätverket {myNet}")
-    else:
-         print(f"IP-adressen {newIP} finns i nätverket {myNet}")
+    description = ""
+    newIP = ""
+    run = True
+    while (run):
+        description = input("skriv enhetens namn eller beskrivning: ")
+        if (description == ""):
+            print("beskrivningen/namnet kan inte vara tomt, försök igen.")
+        else:
+            run = False
+
+    run = True
+    while (run):
+        newIP = getIPnoPrefix("skriv in IP-adressen: ")
+        if not (inNet(myNet, newIP)):
+            print(f"VARNING: {newIP} är inte inom nätverket {myNet}")
+        else:
+            print(f"IP-adressen {newIP} finns i nätverket {myNet}")
+            run = False
     print("sparar enheten i listan....")
     theDevices.append((description, newIP))
     
 
 
-
+#/
+# funktion för att skriva ut listan med enheter
+# /#
 def showDevices():
     print("skriver ut listan med enheter")
+    index = 0
     for desc, ip in theDevices:
-         print(f"enheten {desc} har IP-adressen {ip}")
+         index += 1
+         print(f"enhet {index}, {desc} har IP-adressen {ip}")
 
 
-
+#/
+# funktion för att byta nätverket
+# /#
 def changeNet():
     mynet = ipaddress.ip_network(getIPwithPrefix("skriv vilket nät som skall användas: " ))
     return mynet
 
 
-
+#/
+# Funktion som innehåller huvudloopen
+# /#
 def startpunkt():
     run = True
     
@@ -141,4 +183,5 @@ def startpunkt():
                 theNet = changeNet()
 
 
+##anropar startpunkten för själva programmet
 startpunkt()
