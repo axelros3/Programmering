@@ -3,16 +3,15 @@
 
 import ipaddress
 
-theNet = ipaddress.ip_network("0.0.0.0/24")
 theDevices = []
 
 def getNet():
     run = True
-    myNet = ipaddress
+    myNet 
     while run: 
         svar = getIPwithPrefix("skriv nätverkets IP med prefix, till exempel 192.168.10.0/24: ")
         try: 
-            myNet = myNet.ip_network(svar) 
+            myNet = ipaddress.ip_network(svar) 
         except ValueError: 
             print("Fel: skriv en IPv4-adress med 4 st oktetter mellan 0 och 255\noch ett prefix mellan 1 och 32 tex 192.168.10.0/24.") 
         else: 
@@ -97,12 +96,13 @@ def visa_meny():
 
 
 
-def addDevice():
+def addDevice(myNet):
     description = input("skriv enhetens namn eller beskrivning: ")
     newIP = getIPnoPrefix("skriv in IP-adressen: ")
-    if not (inNet(theNet, newIP)):
-        print(f"VARNING: {newIP} är inte inom nätverket {theNet}")
-    
+    if not (inNet(myNet, newIP)):
+        print(f"VARNING: {newIP} är inte inom nätverket {myNet}")
+    else:
+         print(f"IP-adressen {newIP} finns i nätverket {myNet}")
     print("sparar enheten i listan....")
     theDevices.append((description, newIP))
     
@@ -117,15 +117,16 @@ def showDevices():
 
 
 def changeNet():
-     theNet = ipaddress.ip_network(getIPwithPrefix("skriv vilket nät som skall användas: " ))
-      
+    mynet = ipaddress.ip_network(getIPwithPrefix("skriv vilket nät som skall användas: " ))
+    return mynet
 
 
 
 def startpunkt():
     run = True
+    
     print("vi behöver ha ett huvud nätverk, anges på formatet 192.168.10.0/24.")
-    changeNet()
+    theNet = changeNet()
     while run:
         visa_meny()
         menyval = las_heltal("skriv endast heltal för att välja alternativen i menyn: ", 0, 3)
@@ -133,11 +134,11 @@ def startpunkt():
             case 0:
                 run = False
             case 1:
-                addDevice()
+                addDevice(theNet)
             case 2:
                 showDevices()
             case 3:
-                changeNet()
+                theNet = changeNet()
 
 
 startpunkt()
