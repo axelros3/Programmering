@@ -108,11 +108,16 @@ def las_heltal(fraga, minsta, storsta):
 # funktion för att skriva ut menyvalen i huvudmeny i huvudloopen
 # /#
 def visa_meny(): 
-	print("\nAxels – huvudmeny") 
-	print("1. lägg till enhet") 
-	print("2. visa alla enheter")
-	print("3. ändra nätverk")
-	print("0. Avsluta") 
+    print("\nAxels – huvudmeny") 
+    print("1. lägg till enhet") 
+    print("2. visa alla enheter")
+    print("3. ändra nätverk")
+    print("4. visa antal enheter")
+    print("0. Avsluta") 
+
+
+def showNumberofDevices():
+     print(f"antalet enheter är {len(theDevices)}")
 
 
 #/
@@ -171,7 +176,7 @@ def startpunkt():
     theNet = changeNet()
     while run:
         visa_meny()
-        menyval = las_heltal("skriv endast heltal för att välja alternativen i menyn: ", 0, 3)
+        menyval = las_heltal("skriv endast heltal för att välja alternativen i menyn: ", 0, 4)
         match menyval:
             case 0:
                 run = False
@@ -181,6 +186,8 @@ def startpunkt():
                 showDevices()
             case 3:
                 theNet = changeNet()
+            case 4:
+                showNumberofDevices()
 
 
 ##anropar startpunkten för själva programmet
