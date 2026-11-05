@@ -8,10 +8,11 @@ theDevices = []
 
 def getNet():
     run = True
+    myNet = ipaddress
     while run: 
         svar = getIPwithPrefix("skriv nätverkets IP med prefix, till exempel 192.168.10.0/24: ")
         try: 
-            myNet = ipaddress.ip_network(svar) 
+            myNet = myNet.ip_network(svar) 
         except ValueError: 
             print("Fel: skriv en IPv4-adress med 4 st oktetter mellan 0 och 255\noch ett prefix mellan 1 och 32 tex 192.168.10.0/24.") 
         else: 
@@ -53,8 +54,10 @@ def getIPwithPrefix(text):
             myprefix = int(myprefix)
             if  (1 <= myprefix <= 32):
                 run = False
+            else:
+                 print("Prefixet är inte i intervallet 1 till 32. försök igen")
         except ValueError:
-            print("det blev tyvär fel någonstans vänligen dubbelkolla att du skriver rätt och försök igen.\n")
+            print("det blev tyvär fel vid konvertering till heltal av prefixet, vänligen dubbelkolla att du skriver rätt och försök igen.\n")
         else:
             run = not isIPnoPrefix(myAdress)
     return myIP
@@ -114,8 +117,8 @@ def showDevices():
 
 
 def changeNet():
-     theNet = getIPwithPrefix("skriv vilket nät som skall användas: " )
-     theNet = ipaddress.ip_network(theNet)
+     theNet.ip_network(getIPwithPrefix("skriv vilket nät som skall användas: " ))
+      
 
 
 
