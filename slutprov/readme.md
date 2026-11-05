@@ -26,8 +26,21 @@
 
         
 ##  Redogörelse
+    ##  att jag har en funktion för att byta nätverk beror på min bugg som jag trasslade till det med
+    ##  som inte tillät mig att sätta nätverket mer än en gång och då började jag skriv den funktionen
+    ##  för att komma runt detta.
+    
+    ##  jag valde att använda mig utav tupplar då det är ett trevligare sätt att hantera objekt i listor.
+    ##  det gjorde att jag inte behövde ha flera listor med enheters beskrivningar och ip-adresser utan
+    kan då sammla dem som ett objekt i listan som innehåller både beskrivningen och ip-adressen. 
+
+    ##  att dela upp kod i funktioner gör man för att minimera komplexiteten i ett problem så att man
+    ##  bryter ned problematiken så "atomärt" som möjligt så att varje delproblem blir enkelt att lösa
+    ##  och detta är för mig ett naturligt tillvägagångssätt som jag själv egentligen inte äns tänker
+    ##  på annat än vad mer kan vi bryta ut...
 
 ##  AI-logg
+    ##  INGET
 
 ##  Reflektion
 
