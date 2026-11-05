@@ -117,13 +117,14 @@ def showDevices():
 
 
 def changeNet():
-     theNet.ip_network(getIPwithPrefix("skriv vilket nät som skall användas: " ))
+     theNet = ipaddress.ip_network(getIPwithPrefix("skriv vilket nät som skall användas: " ))
       
 
 
 
 def startpunkt():
     run = True
+    print("vi behöver ha ett huvud nätverk, anges på formatet 192.168.10.0/24.")
     changeNet()
     while run:
         visa_meny()
