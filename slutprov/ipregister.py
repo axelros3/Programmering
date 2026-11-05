@@ -104,7 +104,7 @@ def addDevice():
         print(f"{newIP} är inte inom nätverket {theNet}")
     else:
         print("sparar enheten i listan....")
-        theDevices.append({description,newIP})
+        theDevices.append((description, newIP))
     
 
 
